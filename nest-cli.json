@@ -1,0 +1,56 @@
+{
+  "monorepo": true,
+  "root": "apps/forex-marketplace-source",
+  "sourceRoot": "apps/forex-marketplace-source/src",
+  "compilerOptions": {
+    "webpack": true,
+    "tsConfigPath": "apps/forex-marketplace-source/tsconfig.app.json"
+  },
+  "projects": {
+    "forex-marketplace-source": {
+      "type": "application",
+      "root": "apps/forex-marketplace-source",
+      "entryFile": "main",
+      "sourceRoot": "apps/forex-marketplace-source/src",
+      "compilerOptions": {
+        "tsConfigPath": "apps/forex-marketplace-source/tsconfig.app.json"
+      }
+    },
+    "wallets": {
+      "type": "application",
+      "root": "apps/wallets",
+      "entryFile": "main",
+      "sourceRoot": "apps/wallets/src",
+      "compilerOptions": {
+        "tsConfigPath": "apps/wallets/tsconfig.app.json"
+      }
+    },
+    "users": {
+      "type": "application",
+      "root": "apps/users",
+      "entryFile": "main",
+      "sourceRoot": "apps/users/src",
+      "compilerOptions": {
+        "tsConfigPath": "apps/users/tsconfig.app.json"
+      }
+    },
+    "transactions": {
+      "type": "application",
+      "root": "apps/transactions",
+      "entryFile": "main",
+      "sourceRoot": "apps/transactions/src",
+      "compilerOptions": {
+        "tsConfigPath": "apps/transactions/tsconfig.app.json"
+      }
+    },
+    "rates": {
+      "type": "application",
+      "root": "apps/rates",
+      "entryFile": "main",
+      "sourceRoot": "apps/rates/src",
+      "compilerOptions": {
+        "tsConfigPath": "apps/rates/tsconfig.app.json"
+      }
+    }
+  }
+}
